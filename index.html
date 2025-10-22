@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finish! Upload Your Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container" role="main">
+        <section class="left-section" aria-label="页面说明和插画">
+            <div class="content">
+                <header>
+                    <h1 class="main-title">Finish! Upload Your Resume</h1>
+                    <p class="description">Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+                </header>
+                
+                <div class="step-indicator" aria-label="当前步骤">
+                    <div class="step-circle" role="img" aria-label="步骤1">
+                        <span class="step-number" aria-hidden="true">1</span>
+                    </div>
+                </div>
+                
+                <div class="illustration" role="img" aria-label="猫咪插画">
+                    <img src="photo.png" alt="蓝色猫咪、智能手机、聊天气泡和叶子的插画" class="illustration-image">
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="right-section" aria-label="文件上传区域">
+            <div class="upload-card">
+                <header>
+                    <h2 class="upload-title">Upload file</h2>
+                </header>
+                
+                <form class="upload-form" id="uploadForm" enctype="multipart/form-data">
+                    <div class="upload-area" id="uploadArea" role="button" tabindex="0" aria-label="点击或拖拽文件到此处上传简历">
+                        <div class="upload-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M7 10L12 5L17 10" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5V19" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <p class="upload-text">Drag your resume file to this area, or click on the area to select the appropriate file to upload</p>
+                        <input type="file" id="fileInput" name="resume" accept=".pdf,.doc,.docx" multiple aria-label="选择简历文件" style="display: none;">
+                    </div>
+                    
+                    <div class="files-list" id="filesList" style="display: none;" role="status" aria-live="polite">
+                        <div class="files-header">
+                            <span class="files-count" id="filesCount"></span>
+                            <button type="button" class="clear-all" id="clearAll" aria-label="清除所有文件">清除全部</button>
+                        </div>
+                        <div class="files-container" id="filesContainer"></div>
+                    </div>
+                </form>
+                
+                <div class="button-group">
+                    <button type="button" class="btn btn-secondary" id="lastStepBtn">Last step</button>
+                    <button type="button" class="btn btn-primary" id="finishBtn">Finish</button>
+                </div>
+                
+                <nav class="progress-indicator" aria-label="进度指示器">
+                    <div class="progress-line">
+                        <div class="progress-circle completed" role="img" aria-label="步骤1已完成">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="progress-line-segment" aria-hidden="true"></div>
+                        <div class="progress-circle completed" role="img" aria-label="步骤2已完成">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="progress-line-segment" aria-hidden="true"></div>
+                        <div class="progress-circle pending" role="img" aria-label="步骤3进行中">
+                            <span class="step-number" aria-hidden="true">3</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

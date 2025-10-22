@@ -1,0 +1,95 @@
+# Finish! Upload Your Resume
+
+一个现代化的简历上传页面，具有美观的界面设计和完整的上传功能。
+
+## 功能特性
+
+- 📱 **响应式设计** - 支持桌面端和移动端
+- 🎨 **现代UI** - 简洁美观的界面设计
+- 📁 **多文件上传** - 支持同时上传多个简历文件
+- 🖱️ **拖拽上传** - 支持拖拽文件到上传区域
+- 📋 **文件管理** - 显示已选文件列表，支持单独删除
+- ♿ **无障碍支持** - 完整的键盘导航和屏幕阅读器支持
+- 🎭 **动画效果** - 流畅的交互动画和视觉效果
+
+## 支持的文件格式
+
+- PDF (.pdf)
+- Word文档 (.doc)
+- Word文档 (.docx)
+
+## 文件大小限制
+
+- 单个文件最大：10MB
+
+## 技术栈
+
+- **HTML5** - 语义化标签和无障碍支持
+- **CSS3** - 现代样式和动画效果
+- **JavaScript** - 原生JS实现交互功能
+- **SVG** - 矢量图标和插画
+
+## 项目结构
+
+```
+├── index.html          # 主页面文件
+├── styles.css          # 样式文件
+├── script.js           # 交互脚本
+├── photo.png           # 插画图片
+└── README.md           # 项目说明
+```
+
+## 使用方法
+
+1. 打开 `index.html` 文件
+2. 点击上传区域或拖拽文件到上传区域
+3. 选择支持的简历文件格式
+4. 查看已选文件列表
+5. 点击"Finish"完成上传
+
+## 浏览器支持
+
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
+## 开发说明
+
+### 样式特点
+- 使用CSS Grid和Flexbox布局
+- 支持响应式设计
+- 包含平滑动画效果
+- 遵循现代设计原则
+
+### 交互功能
+- 文件类型验证
+- 文件大小检查
+- 多文件管理
+- 拖拽上传支持
+- 键盘导航支持
+
+### 无障碍特性
+- ARIA标签支持
+- 键盘导航
+- 屏幕阅读器兼容
+- 焦点管理
+
+## 自定义配置
+
+### 修改文件大小限制
+在 `script.js` 中修改 `maxSize` 变量：
+```javascript
+const maxSize = 10 * 1024 * 1024; // 10MB
+```
+
+### 修改支持的文件类型
+在 `script.js` 中修改 `validTypes` 数组：
+```javascript
+const validTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+```
+
+### 修改样式主题
+在 `styles.css` 中修改CSS变量和颜色值。
+
+
