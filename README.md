@@ -75,21 +75,5 @@
 - 屏幕阅读器兼容
 - 焦点管理
 
-## 自定义配置
-
-### 修改文件大小限制
-在 `script.js` 中修改 `maxSize` 变量：
-```javascript
-const maxSize = 10 * 1024 * 1024; // 10MB
-```
-
-### 修改支持的文件类型
-在 `script.js` 中修改 `validTypes` 数组：
-```javascript
-const validTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-```
-
-### 修改样式主题
-在 `styles.css` 中修改CSS变量和颜色值。
 
 
